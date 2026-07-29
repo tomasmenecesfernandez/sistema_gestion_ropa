@@ -12,7 +12,7 @@ using BLL;
 using Servicios.observer;
 namespace sistema
 {
-    public partial class composite : Form, Iobservertraduccion
+    public partial class composite : formulario_estilo, Iobservertraduccion
     {
         public composite(idiomas idiomas)
         {
@@ -36,10 +36,10 @@ namespace sistema
         public void mostrar_composite()
         {
             int i = (-1);
-            foreach (BEpermisoComponente compo in bllrol.traer_nodos_hijos(6))
+            foreach (BEpermisoComponente compo in bllrol.traer_nodos_hijos(0))
             {
                 i++;
-                mostrar_treeview(bllrol.traer_nodos_hijos(6)[i], treeView1.Nodes);
+                mostrar_treeview(bllrol.traer_nodos_hijos(0)[i], treeView1.Nodes);
             }
 
         }

@@ -53,6 +53,7 @@ namespace sistema
             // 
             // groupBox1
             // 
+            this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.groupBox1.Controls.Add(this.treeView1);
             this.groupBox1.Controls.Add(this.btm_borrar1);
             this.groupBox1.Controls.Add(this.btm_agregar1);
@@ -143,6 +144,7 @@ namespace sistema
             // 
             // usuario_btm_ir_historlal
             // 
+            this.usuario_btm_ir_historlal.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.usuario_btm_ir_historlal.Image = global::sistema.Properties.Resources.report_icon_216913;
             this.usuario_btm_ir_historlal.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.usuario_btm_ir_historlal.Location = new System.Drawing.Point(44, 305);
@@ -156,8 +158,9 @@ namespace sistema
             // 
             // contraceña_label1
             // 
+            this.contraceña_label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.contraceña_label1.AutoSize = true;
-            this.contraceña_label1.Location = new System.Drawing.Point(44, 110);
+            this.contraceña_label1.Location = new System.Drawing.Point(30, 106);
             this.contraceña_label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.contraceña_label1.Name = "contraceña_label1";
             this.contraceña_label1.Size = new System.Drawing.Size(119, 23);
@@ -166,6 +169,7 @@ namespace sistema
             // 
             // textBox2
             // 
+            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox2.Location = new System.Drawing.Point(44, 133);
             this.textBox2.Margin = new System.Windows.Forms.Padding(4);
@@ -175,8 +179,9 @@ namespace sistema
             // 
             // usuario_label1
             // 
+            this.usuario_label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.usuario_label1.AutoSize = true;
-            this.usuario_label1.Location = new System.Drawing.Point(44, 44);
+            this.usuario_label1.Location = new System.Drawing.Point(40, 44);
             this.usuario_label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.usuario_label1.Name = "usuario_label1";
             this.usuario_label1.Size = new System.Drawing.Size(82, 23);
@@ -185,9 +190,10 @@ namespace sistema
             // 
             // btm_borrar
             // 
+            this.btm_borrar.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btm_borrar.Image = global::sistema.Properties.Resources.delete_4219;
             this.btm_borrar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btm_borrar.Location = new System.Drawing.Point(44, 263);
+            this.btm_borrar.Location = new System.Drawing.Point(36, 263);
             this.btm_borrar.Margin = new System.Windows.Forms.Padding(4);
             this.btm_borrar.Name = "btm_borrar";
             this.btm_borrar.Size = new System.Drawing.Size(319, 34);
@@ -198,9 +204,10 @@ namespace sistema
             // 
             // btm_modificar
             // 
+            this.btm_modificar.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btm_modificar.Image = global::sistema.Properties.Resources.edit_modify_icon_1494881;
             this.btm_modificar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btm_modificar.Location = new System.Drawing.Point(44, 221);
+            this.btm_modificar.Location = new System.Drawing.Point(36, 221);
             this.btm_modificar.Margin = new System.Windows.Forms.Padding(4);
             this.btm_modificar.Name = "btm_modificar";
             this.btm_modificar.Size = new System.Drawing.Size(319, 34);
@@ -211,6 +218,7 @@ namespace sistema
             // 
             // dataGridView1
             // 
+            this.dataGridView1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(386, 34);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
@@ -224,6 +232,7 @@ namespace sistema
             // 
             // textBox1
             // 
+            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(44, 71);
             this.textBox1.Margin = new System.Windows.Forms.Padding(4);
@@ -233,9 +242,10 @@ namespace sistema
             // 
             // btm_agregar
             // 
+            this.btm_agregar.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btm_agregar.Image = global::sistema.Properties.Resources.add_button_icon_icons_com_58943;
             this.btm_agregar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btm_agregar.Location = new System.Drawing.Point(44, 179);
+            this.btm_agregar.Location = new System.Drawing.Point(36, 179);
             this.btm_agregar.Margin = new System.Windows.Forms.Padding(4);
             this.btm_agregar.Name = "btm_agregar";
             this.btm_agregar.Size = new System.Drawing.Size(319, 34);
@@ -257,7 +267,7 @@ namespace sistema
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1137, 1013);
+            this.ClientSize = new System.Drawing.Size(1128, 1013);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.usuario_btm_ir_historlal);

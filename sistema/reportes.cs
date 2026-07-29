@@ -31,21 +31,18 @@ namespace sistema
         List<BEusuario> lista_usuarios;
         BLL_cliente bll_cliente = new BLL_cliente();
         BLLusuario bll_usuario = new BLLusuario();
-        DateTime fechaHasta;
-        DateTime fechaDesde;
         Dictionary<string, double> lista_de_datos = new Dictionary<string, double>();
 
         private void reportes_Load(object sender, EventArgs e)
         {
             armar_listview();
             cargar_datos_sistema();
-            cargar_reportes();
-            mostrar_grafico();
+            cargar_reportes( DateTime.Today,DateTime.Today.AddMonths(-1));
+            mostrar_grafico(DateTime.Today, DateTime.Today.AddMonths(-1));
             comboBox1.Text = "DESDE EL INICIO";
         }
-        public void mostrar_grafico()
+        public void mostrar_grafico(DateTime fechaDesde, DateTime fechaHasta)
         {
-
             chart1.Titles.Clear();
             chart1.Series.Clear();
             chart1.ChartAreas.Clear();
@@ -58,7 +55,6 @@ namespace sistema
             serie.ChartType = SeriesChartType.Bar;
             serie.Points.DataBindXY(lista_de_datos.Keys, lista_de_datos.Values);
             chart1.Series.Add(serie);
-
             cargar_datos_grafico(fechaDesde,fechaHasta);
         }
         public void cargar_datos_grafico(DateTime fecha_inicio,DateTime fecha_final)
@@ -81,15 +77,14 @@ namespace sistema
             listView1.View = View.Details;
             listView1.FullRowSelect = true;
             listView1.GridLines = true;
-            listView1.Columns.Add("Descripción", 150);
-            listView1.Columns.Add("Valor", 120);
+            listView1.Columns.Add("Descripción", 300);
+            listView1.Columns.Add("Valor", 180);
+
         }
         public void cargar_datos_sistema()
         {
             lista_clientes = bll_cliente.leer_todo();
             lista_usuarios = bll_usuario.leer_usuario();
-            fechaHasta = DateTime.Today;
-            fechaDesde = fechaHasta.AddMonths(-1);
         }
         public double calcular_ventas_por_fecha(DateTime fecha_inicio,DateTime fecha_final)
         {
@@ -141,13 +136,16 @@ namespace sistema
             }
             return total;
         }
-        public void cargar_reportes()
+        public void cargar_reportes(DateTime fechaDesde,DateTime fechaHasta )
         {
+            listView1.Items.Clear();
             listView1.Items.Add(new ListViewItem(new string[] { "Cantidad de Clientes:", lista_clientes.Count.ToString() })) ;
             listView1.Items.Add(new ListViewItem(new string[] { "Cantidad de Usuarios:", lista_usuarios.Count.ToString() })) ;
             listView1.Items.Add(new ListViewItem(new string[] { "Monto total de ventas del mes:", calcular_ventas_por_fecha(fechaDesde,fechaHasta).ToString() })) ;
             listView1.Items.Add(new ListViewItem(new string[] { "Cantidad total de pedidos hechos en el mes:", calcular_cantidad_de_pedidos(fechaDesde,fechaHasta).ToString() })) ;
             listView1.Items.Add(new ListViewItem(new string[] { "Cantidad total de prendas vendidas en el mes:", calcular_cantidad_de_prendas_vendidas(fechaDesde,fechaHasta).ToString() })) ;
+            listView1.Columns[0].Width = -2;
+            listView1.Columns[1].Width = -2;
         }
 
         public void actualizar_idioma()
@@ -164,23 +162,28 @@ namespace sistema
             {
                 case ("HOY"): cargar_datos_grafico(DateTime.Today, DateTime.Today);
                     actualizar_fechas_label(DateTime.Today, DateTime.Today);
+                    cargar_reportes(DateTime.Today, DateTime.Today);
                     label_monto_total.Text="$"+ calcular_ventas_por_fecha(DateTime.Today, DateTime.Today).ToString();
                     break;
                 case ("ULTIMA SEMANA"): cargar_datos_grafico(DateTime.Today.AddDays(-7), DateTime.Today); 
                     actualizar_fechas_label(DateTime.Today.AddDays(-7), DateTime.Today);
+                    cargar_reportes(DateTime.Today.AddDays(-7), DateTime.Today);
                     label_monto_total.Text ="$"+ calcular_ventas_por_fecha(DateTime.Today.AddDays(-7), DateTime.Today).ToString();
                     break;
                 case ("ULTIMO MES"): cargar_datos_grafico(DateTime.Today.AddMonths(-1), DateTime.Today);
+                    cargar_reportes(DateTime.Today.AddMonths(-1), DateTime.Today);
                     actualizar_fechas_label(DateTime.Today.AddMonths(-1), DateTime.Today);
                     label_monto_total.Text= "$"+ calcular_ventas_por_fecha(DateTime.Today.AddMonths(-1), DateTime.Today).ToString();
                     break;
                 case ("ULTIMO AÑO"):
                     cargar_datos_grafico(DateTime.Today.AddYears(-1), DateTime.Today);
+                    cargar_reportes(DateTime.Today.AddYears(-1), DateTime.Today);
                     actualizar_fechas_label(DateTime.Today.AddYears(-1), DateTime.Today);
                     label_monto_total.Text="$"+ calcular_ventas_por_fecha(DateTime.Today.AddYears(-1), DateTime.Today).ToString();
                     break;
                 case ("DESDE EL INICIO"): cargar_datos_grafico(Convert.ToDateTime("01 / 01 / 2025"), DateTime.Today);
                     actualizar_fechas_label(Convert.ToDateTime("01 / 01 / 2025"), DateTime.Today);
+                    cargar_reportes(Convert.ToDateTime("01 / 01 / 2025"), DateTime.Today);
                     label_monto_total.Text="$"+ calcular_ventas_por_fecha(Convert.ToDateTime("01 / 01 / 2025"), DateTime.Today).ToString();
                     break;
                 default: break; 
@@ -193,33 +196,30 @@ namespace sistema
         }
         void cargar_pdf(){
         string file = conseguir_ruta_nueva() ;
-            CrearPdfConReportes(lista_clientes, file);
+            CrearPdfConReportes(lista_clientes, file,Convert.ToDateTime(label_Fecha_inicio.Text),Convert.ToDateTime(label_fecha_final.Text));
+            MessageBox.Show("El PDF se guardó en: " + file);
         }
 
-     void CrearPdfConReportes(List<BEcliente> lista, string filePath)
+     void CrearPdfConReportes(List<BEcliente> lista, string filePath, DateTime fechaDesde, DateTime fechaHasta)
         {
-        Document doc = new Document(PageSize.A4, 25, 25, 30, 30);
-        PdfWriter.GetInstance(doc, new FileStream(filePath, FileMode.OpenOrCreate));
-        doc.Open();
+            Document doc = new Document(PageSize.A4, 25, 25, 30, 30);
+            PdfWriter.GetInstance(doc, new FileStream(filePath, FileMode.Create));
+            doc.Open();
 
-        // Título
-        Paragraph titulo = new Paragraph("Reporte del sistema", FontFactory.GetFont(FontFactory.HELVETICA_BOLD, 16));
-        titulo.Alignment = Element.ALIGN_CENTER;
-        doc.Add(titulo);
-        doc.Add(Chunk.NEWLINE);
+            Paragraph titulo = new Paragraph("Reporte del sistema", FontFactory.GetFont(FontFactory.HELVETICA_BOLD, 16));
+            titulo.Alignment = Element.ALIGN_CENTER;
+            doc.Add(titulo);
+            doc.Add(Chunk.NEWLINE);
 
-        // Tabla
-        PdfPTable tabla = new PdfPTable(2);
-        tabla.WidthPercentage = 80;
-        tabla.SetWidths(new float[] { 2,1});
+            PdfPTable tabla = new PdfPTable(2);
+            tabla.WidthPercentage = 90;
+            tabla.SetWidths(new float[] { 3f, 1f });
 
-        // Header
-        tabla.AddCell("Descripción");
-        tabla.AddCell("Valor");
+            tabla.AddCell("Descripción");
+            tabla.AddCell("Valor");
 
-        // Filas
             tabla.AddCell("Cantidad de Clientes:");
-            tabla.AddCell(lista_clientes.Count.ToString()); 
+            tabla.AddCell(lista.Count.ToString());
             tabla.AddCell("Cantidad de Usuarios:");
             tabla.AddCell(lista_usuarios.Count.ToString());
             tabla.AddCell("Monto total de ventas del mes:");
@@ -235,10 +235,10 @@ namespace sistema
             doc.Add(tabla);
 
             Paragraph texto_final = new Paragraph("Fin.", FontFactory.GetFont(FontFactory.HELVETICA_BOLD, 12));
-            titulo.Alignment = Element.ALIGN_LEFT;
+            texto_final.Alignment = Element.ALIGN_LEFT;
             doc.Add(texto_final);
             doc.Close();
-    }
+        }
 
         private void boton_Exportar_Click(object sender, EventArgs e)
         {
@@ -247,13 +247,22 @@ namespace sistema
         }
         public string conseguir_ruta_nueva()
         {
+            string carpetaReportes = "reportes";
+
+            if (!Directory.Exists(carpetaReportes))
+            {
+                Directory.CreateDirectory(carpetaReportes);
+            }
+
             int contador = 1;
-            string ruta = @"C:\Users\user\Desktop\universidad\introducion a la programacion\3 año\wwwww\trabajo practico\reportes"+contador+".pdf";
+            string ruta = carpetaReportes + @"\reportes" + contador + ".pdf";
+
             while (File.Exists(ruta))
             {
                 contador++;
-                ruta = @"C:\Users\user\Desktop\universidad\introducion a la programacion\3 año\wwwww\trabajo practico\reportes" +contador+ ".pdf";
+                ruta = carpetaReportes + @"\reportes" + contador + ".pdf";
             }
+
             return ruta;
         }
 

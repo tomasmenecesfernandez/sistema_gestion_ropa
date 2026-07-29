@@ -13,18 +13,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Servicios", "Servicios\Servicios.csproj", "{35BE67A8-A813-460F-A944-728297871E4A}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F3152031-EAF9-46C9-B766-D81D0F92327C}"
-	ProjectSection(SolutionItems) = preProject
-		..\..\LUD\TPN1_DAS_Meneces_Tomas\bll\BLL_cliente.cs = ..\..\LUD\TPN1_DAS_Meneces_Tomas\bll\BLL_cliente.cs
-		..\..\LUD\TPN1_DAS_Meneces_Tomas\MPP\MPPbuzos.cs = ..\..\LUD\TPN1_DAS_Meneces_Tomas\MPP\MPPbuzos.cs
-		..\..\LUD\TPN1_DAS_Meneces_Tomas\MPP\MPPcliente.cs = ..\..\LUD\TPN1_DAS_Meneces_Tomas\MPP\MPPcliente.cs
-		..\..\LUD\TPN1_DAS_Meneces_Tomas\MPP\MPPlocalidad.cs = ..\..\LUD\TPN1_DAS_Meneces_Tomas\MPP\MPPlocalidad.cs
-		..\..\LUD\TPN1_DAS_Meneces_Tomas\MPP\MPPpedido.cs = ..\..\LUD\TPN1_DAS_Meneces_Tomas\MPP\MPPpedido.cs
-		..\..\LUD\TPN1_DAS_Meneces_Tomas\MPP\MPPremeras.cs = ..\..\LUD\TPN1_DAS_Meneces_Tomas\MPP\MPPremeras.cs
-		..\..\LUD\TPN1_DAS_Meneces_Tomas\MPP\MPPusuario.cs = ..\..\LUD\TPN1_DAS_Meneces_Tomas\MPP\MPPusuario.cs
-		..\..\LUD\TPN1_DAS_Meneces_Tomas\sistema de ropa\sistema1.cs = ..\..\LUD\TPN1_DAS_Meneces_Tomas\sistema de ropa\sistema1.cs
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

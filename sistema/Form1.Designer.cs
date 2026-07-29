@@ -30,10 +30,6 @@ namespace sistema
         private void InitializeComponent()
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.permisos_menu = new System.Windows.Forms.ToolStripMenuItem();
-            this.menu_label_usuario = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.usuarios_menu = new System.Windows.Forms.ToolStripMenuItem();
             this.login_menu = new System.Windows.Forms.ToolStripMenuItem();
             this.reportes_menu = new System.Windows.Forms.ToolStripMenuItem();
@@ -44,7 +40,11 @@ namespace sistema
             this.menu_ABMPermisos = new System.Windows.Forms.ToolStripMenuItem();
             this.personalizarRopa_menu = new System.Windows.Forms.ToolStripMenuItem();
             this.manual_menu = new System.Windows.Forms.ToolStripMenuItem();
+            this.permisos_menu = new System.Windows.Forms.ToolStripMenuItem();
             this.CERRAR_SESION_MENU = new System.Windows.Forms.ToolStripMenuItem();
+            this.menu_label_usuario = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -67,50 +67,10 @@ namespace sistema
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1607, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1593, 28);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
-            // 
-            // permisos_menu
-            // 
-            this.permisos_menu.Name = "permisos_menu";
-            this.permisos_menu.Size = new System.Drawing.Size(81, 24);
-            this.permisos_menu.Text = "Permisos";
-            // 
-            // menu_label_usuario
-            // 
-            this.menu_label_usuario.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.menu_label_usuario.AutoSize = true;
-            this.menu_label_usuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.menu_label_usuario.Location = new System.Drawing.Point(1968, 4);
-            this.menu_label_usuario.Name = "menu_label_usuario";
-            this.menu_label_usuario.Size = new System.Drawing.Size(53, 20);
-            this.menu_label_usuario.TabIndex = 3;
-            this.menu_label_usuario.Text = "label1";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(1395, 4);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(135, 24);
-            this.comboBox1.TabIndex = 5;
-            this.comboBox1.Text = "IDIOMAS";
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged_1);
-            // 
-            // label2
-            // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(2047, 4);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(53, 20);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "label2";
             // 
             // usuarios_menu
             // 
@@ -198,6 +158,12 @@ namespace sistema
             this.manual_menu.Text = "Manual De Usuario";
             this.manual_menu.Click += new System.EventHandler(this.manualToolStripMenuItem_Click);
             // 
+            // permisos_menu
+            // 
+            this.permisos_menu.Name = "permisos_menu";
+            this.permisos_menu.Size = new System.Drawing.Size(81, 24);
+            this.permisos_menu.Text = "Permisos";
+            // 
             // CERRAR_SESION_MENU
             // 
             this.CERRAR_SESION_MENU.Image = global::sistema.Properties.Resources._4115235_exit_logout_sign_out_114030;
@@ -206,11 +172,45 @@ namespace sistema
             this.CERRAR_SESION_MENU.Text = "CERRAR SESION";
             this.CERRAR_SESION_MENU.Click += new System.EventHandler(this.cERRARSESIONToolStripMenuItem_Click);
             // 
+            // menu_label_usuario
+            // 
+            this.menu_label_usuario.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.menu_label_usuario.AutoSize = true;
+            this.menu_label_usuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.menu_label_usuario.Location = new System.Drawing.Point(1954, 4);
+            this.menu_label_usuario.Name = "menu_label_usuario";
+            this.menu_label_usuario.Size = new System.Drawing.Size(53, 20);
+            this.menu_label_usuario.TabIndex = 3;
+            this.menu_label_usuario.Text = "label1";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(1395, 4);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(135, 24);
+            this.comboBox1.TabIndex = 5;
+            this.comboBox1.Text = "IDIOMAS";
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged_1);
+            // 
+            // label2
+            // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(2033, 4);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(53, 20);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "label2";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1607, 815);
+            this.ClientSize = new System.Drawing.Size(1593, 815);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.menu_label_usuario);
