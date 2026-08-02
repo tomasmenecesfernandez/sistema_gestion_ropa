@@ -41,7 +41,7 @@ namespace sistema
             this.webView21.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.webView21.CreationProperties = null;
             this.webView21.DefaultBackgroundColor = System.Drawing.Color.White;
-            this.webView21.Location = new System.Drawing.Point(27, 67);
+            this.webView21.Location = new System.Drawing.Point(52, 60);
             this.webView21.Name = "webView21";
             this.webView21.Size = new System.Drawing.Size(1087, 691);
             this.webView21.TabIndex = 0;
@@ -60,7 +60,7 @@ namespace sistema
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1126, 763);
+            this.ClientSize = new System.Drawing.Size(1185, 763);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.webView21);
             this.Name = "Manual";

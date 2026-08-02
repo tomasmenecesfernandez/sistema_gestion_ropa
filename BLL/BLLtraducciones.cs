@@ -19,7 +19,8 @@ namespace BLL
             {
                 if (traduccion.clave==clave)
                 {
-                    if (traduccion.valor=="") { return traduccion.clave; }
+                    if (traduccion.valor=="") 
+                    { return traduccion.clave; }
                     return traduccion.valor;
                 }
             }

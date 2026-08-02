@@ -47,13 +47,11 @@ namespace sistema
             // 
             // treeView1
             // 
-            this.treeView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.treeView1.Location = new System.Drawing.Point(276, 67);
+            this.treeView1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.treeView1.Location = new System.Drawing.Point(352, 122);
             this.treeView1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.treeView1.Name = "treeView1";
-            this.treeView1.Size = new System.Drawing.Size(629, 408);
+            this.treeView1.Size = new System.Drawing.Size(629, 398);
             this.treeView1.TabIndex = 25;
             this.treeView1.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeView1_AfterSelect);
             // 
@@ -73,7 +71,7 @@ namespace sistema
             // composite_rbtm_rol
             // 
             this.composite_rbtm_rol.AutoSize = true;
-            this.composite_rbtm_rol.Location = new System.Drawing.Point(194, 35);
+            this.composite_rbtm_rol.Location = new System.Drawing.Point(243, 31);
             this.composite_rbtm_rol.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.composite_rbtm_rol.Name = "composite_rbtm_rol";
             this.composite_rbtm_rol.Size = new System.Drawing.Size(55, 27);
@@ -90,13 +88,14 @@ namespace sistema
             this.comboBox2.Location = new System.Drawing.Point(20, 64);
             this.comboBox2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(229, 31);
+            this.comboBox2.Size = new System.Drawing.Size(278, 31);
             this.comboBox2.TabIndex = 22;
             // 
             // composite_seleccionado
             // 
+            this.composite_seleccionado.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.composite_seleccionado.AutoSize = true;
-            this.composite_seleccionado.Location = new System.Drawing.Point(263, 39);
+            this.composite_seleccionado.Location = new System.Drawing.Point(339, 94);
             this.composite_seleccionado.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.composite_seleccionado.Name = "composite_seleccionado";
             this.composite_seleccionado.Size = new System.Drawing.Size(194, 23);
@@ -105,8 +104,9 @@ namespace sistema
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(461, 39);
+            this.label2.Location = new System.Drawing.Point(537, 94);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(14, 23);
@@ -116,29 +116,29 @@ namespace sistema
             // 
             // groupBox2
             // 
+            this.groupBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.groupBox2.Controls.Add(this.comboBox2);
             this.groupBox2.Controls.Add(this.btm_borrar);
             this.groupBox2.Controls.Add(this.btm_modificar);
             this.groupBox2.Controls.Add(this.btm_agregar);
             this.groupBox2.Controls.Add(this.composite_rbtm_rol);
             this.groupBox2.Controls.Add(this.composite_rbtm_permiso);
-            this.groupBox2.Location = new System.Drawing.Point(9, 67);
+            this.groupBox2.Location = new System.Drawing.Point(36, 122);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.groupBox2.Size = new System.Drawing.Size(253, 257);
+            this.groupBox2.Size = new System.Drawing.Size(302, 351);
             this.groupBox2.TabIndex = 33;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = ".";
             // 
             // btm_borrar
             // 
             this.btm_borrar.Image = global::sistema.Properties.Resources.delete_4219;
             this.btm_borrar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btm_borrar.Location = new System.Drawing.Point(20, 200);
+            this.btm_borrar.Location = new System.Drawing.Point(20, 276);
             this.btm_borrar.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btm_borrar.Name = "btm_borrar";
-            this.btm_borrar.Size = new System.Drawing.Size(229, 43);
+            this.btm_borrar.Size = new System.Drawing.Size(278, 43);
             this.btm_borrar.TabIndex = 19;
             this.btm_borrar.Text = "BORRAR";
             this.btm_borrar.UseVisualStyleBackColor = true;
@@ -148,10 +148,10 @@ namespace sistema
             // 
             this.btm_modificar.Image = global::sistema.Properties.Resources.edit_modify_icon_149488;
             this.btm_modificar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btm_modificar.Location = new System.Drawing.Point(20, 151);
+            this.btm_modificar.Location = new System.Drawing.Point(20, 187);
             this.btm_modificar.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btm_modificar.Name = "btm_modificar";
-            this.btm_modificar.Size = new System.Drawing.Size(229, 43);
+            this.btm_modificar.Size = new System.Drawing.Size(278, 43);
             this.btm_modificar.TabIndex = 20;
             this.btm_modificar.Text = "MODIFICAR";
             this.btm_modificar.UseVisualStyleBackColor = true;
@@ -165,7 +165,7 @@ namespace sistema
             this.btm_agregar.Location = new System.Drawing.Point(20, 102);
             this.btm_agregar.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btm_agregar.Name = "btm_agregar";
-            this.btm_agregar.Size = new System.Drawing.Size(229, 43);
+            this.btm_agregar.Size = new System.Drawing.Size(278, 43);
             this.btm_agregar.TabIndex = 21;
             this.btm_agregar.Text = "AGREGAR";
             this.btm_agregar.UseVisualStyleBackColor = true;
@@ -173,12 +173,13 @@ namespace sistema
             // 
             // btm_crear_rol
             // 
+            this.btm_crear_rol.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btm_crear_rol.Image = global::sistema.Properties.Resources._1486485588_add_create_new_math_sign_cross_plus_81186;
             this.btm_crear_rol.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btm_crear_rol.Location = new System.Drawing.Point(28, 330);
+            this.btm_crear_rol.Location = new System.Drawing.Point(47, 477);
             this.btm_crear_rol.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btm_crear_rol.Name = "btm_crear_rol";
-            this.btm_crear_rol.Size = new System.Drawing.Size(230, 43);
+            this.btm_crear_rol.Size = new System.Drawing.Size(278, 43);
             this.btm_crear_rol.TabIndex = 28;
             this.btm_crear_rol.Text = "CREAR NUEVO ROL";
             this.btm_crear_rol.UseVisualStyleBackColor = true;
@@ -198,7 +199,7 @@ namespace sistema
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.ClientSize = new System.Drawing.Size(918, 506);
+            this.ClientSize = new System.Drawing.Size(1070, 628);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.btm_crear_rol);

@@ -46,17 +46,19 @@ namespace sistema
             // 
             // textBox2
             // 
+            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(792, 408);
+            this.textBox2.Location = new System.Drawing.Point(792, 449);
             this.textBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(332, 28);
+            this.textBox2.Size = new System.Drawing.Size(339, 28);
             this.textBox2.TabIndex = 11;
             // 
             // dataGridView2
             // 
+            this.dataGridView2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(66, 260);
+            this.dataGridView2.Location = new System.Drawing.Point(66, 301);
             this.dataGridView2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.ReadOnly = true;
@@ -67,8 +69,9 @@ namespace sistema
             // 
             // dataGridView1
             // 
+            this.dataGridView1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(66, 12);
+            this.dataGridView1.Location = new System.Drawing.Point(66, 53);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
@@ -80,18 +83,20 @@ namespace sistema
             // 
             // textBox1
             // 
+            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(792, 48);
+            this.textBox1.Location = new System.Drawing.Point(792, 89);
             this.textBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(330, 28);
+            this.textBox1.Size = new System.Drawing.Size(339, 28);
             this.textBox1.TabIndex = 8;
             // 
             // label_idioma_idioma
             // 
+            this.label_idioma_idioma.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label_idioma_idioma.AutoSize = true;
             this.label_idioma_idioma.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_idioma_idioma.Location = new System.Drawing.Point(792, 12);
+            this.label_idioma_idioma.Location = new System.Drawing.Point(792, 53);
             this.label_idioma_idioma.Name = "label_idioma_idioma";
             this.label_idioma_idioma.Size = new System.Drawing.Size(75, 24);
             this.label_idioma_idioma.TabIndex = 12;
@@ -99,9 +104,10 @@ namespace sistema
             // 
             // label_traduccion_idioma
             // 
+            this.label_traduccion_idioma.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label_traduccion_idioma.AutoSize = true;
             this.label_traduccion_idioma.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_traduccion_idioma.Location = new System.Drawing.Point(786, 368);
+            this.label_traduccion_idioma.Location = new System.Drawing.Point(786, 409);
             this.label_traduccion_idioma.Name = "label_traduccion_idioma";
             this.label_traduccion_idioma.Size = new System.Drawing.Size(133, 24);
             this.label_traduccion_idioma.TabIndex = 13;
@@ -110,12 +116,13 @@ namespace sistema
             // 
             // btm_borrar
             // 
+            this.btm_borrar.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btm_borrar.Image = global::sistema.Properties.Resources.delete_4219;
             this.btm_borrar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btm_borrar.Location = new System.Drawing.Point(792, 168);
+            this.btm_borrar.Location = new System.Drawing.Point(792, 209);
             this.btm_borrar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btm_borrar.Name = "btm_borrar";
-            this.btm_borrar.Size = new System.Drawing.Size(333, 60);
+            this.btm_borrar.Size = new System.Drawing.Size(330, 60);
             this.btm_borrar.TabIndex = 14;
             this.btm_borrar.Tag = "btnAdd";
             this.btm_borrar.Text = "Borrar";
@@ -124,12 +131,13 @@ namespace sistema
             // 
             // btm_modificar
             // 
+            this.btm_modificar.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btm_modificar.Image = global::sistema.Properties.Resources.edit_modify_icon_149488;
             this.btm_modificar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btm_modificar.Location = new System.Drawing.Point(792, 454);
+            this.btm_modificar.Location = new System.Drawing.Point(792, 495);
             this.btm_modificar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btm_modificar.Name = "btm_modificar";
-            this.btm_modificar.Size = new System.Drawing.Size(333, 60);
+            this.btm_modificar.Size = new System.Drawing.Size(330, 60);
             this.btm_modificar.TabIndex = 7;
             this.btm_modificar.Tag = "btnCreate";
             this.btm_modificar.Text = "Modificar";
@@ -138,12 +146,13 @@ namespace sistema
             // 
             // btm_agregar
             // 
+            this.btm_agregar.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btm_agregar.Image = global::sistema.Properties.Resources.add_button_icon_icons_com_58943;
             this.btm_agregar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btm_agregar.Location = new System.Drawing.Point(792, 94);
+            this.btm_agregar.Location = new System.Drawing.Point(792, 135);
             this.btm_agregar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btm_agregar.Name = "btm_agregar";
-            this.btm_agregar.Size = new System.Drawing.Size(333, 60);
+            this.btm_agregar.Size = new System.Drawing.Size(330, 60);
             this.btm_agregar.TabIndex = 6;
             this.btm_agregar.Tag = "btnAdd";
             this.btm_agregar.Text = "Agregar";
@@ -163,7 +172,7 @@ namespace sistema
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1138, 695);
+            this.ClientSize = new System.Drawing.Size(1184, 695);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btm_borrar);
             this.Controls.Add(this.label_traduccion_idioma);

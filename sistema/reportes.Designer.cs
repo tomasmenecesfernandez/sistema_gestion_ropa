@@ -50,10 +50,11 @@ namespace sistema
             // listView1
             // 
             this.listView1.AllowColumnReorder = true;
+            this.listView1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.listView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.listView1.GridLines = true;
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(12, 121);
+            this.listView1.Location = new System.Drawing.Point(52, 121);
             this.listView1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(385, 349);
@@ -63,8 +64,7 @@ namespace sistema
             // 
             // chart1
             // 
-            this.chart1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.chart1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             chartArea1.Name = "ChartArea1";
             this.chart1.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
@@ -81,6 +81,7 @@ namespace sistema
             // 
             // comboBox1
             // 
+            this.comboBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.comboBox1.AutoCompleteCustomSource.AddRange(new string[] {
             "HOY",
             "ULTIMA SEMANA",
@@ -103,6 +104,7 @@ namespace sistema
             // 
             // lbl_fecha_inicio
             // 
+            this.lbl_fecha_inicio.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lbl_fecha_inicio.AutoSize = true;
             this.lbl_fecha_inicio.Location = new System.Drawing.Point(472, 76);
             this.lbl_fecha_inicio.Name = "lbl_fecha_inicio";
@@ -112,6 +114,7 @@ namespace sistema
             // 
             // lbl_fecha_hasta
             // 
+            this.lbl_fecha_hasta.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lbl_fecha_hasta.AutoSize = true;
             this.lbl_fecha_hasta.Location = new System.Drawing.Point(733, 76);
             this.lbl_fecha_hasta.Name = "lbl_fecha_hasta";
@@ -121,6 +124,7 @@ namespace sistema
             // 
             // label_Fecha_inicio
             // 
+            this.label_Fecha_inicio.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label_Fecha_inicio.AutoSize = true;
             this.label_Fecha_inicio.Location = new System.Drawing.Point(579, 76);
             this.label_Fecha_inicio.Name = "label_Fecha_inicio";
@@ -130,6 +134,7 @@ namespace sistema
             // 
             // label_fecha_final
             // 
+            this.label_fecha_final.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label_fecha_final.AutoSize = true;
             this.label_fecha_final.Location = new System.Drawing.Point(834, 76);
             this.label_fecha_final.Name = "label_fecha_final";
@@ -139,6 +144,7 @@ namespace sistema
             // 
             // lbl_monto_total
             // 
+            this.lbl_monto_total.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lbl_monto_total.AutoSize = true;
             this.lbl_monto_total.Location = new System.Drawing.Point(468, 608);
             this.lbl_monto_total.Name = "lbl_monto_total";
@@ -148,6 +154,7 @@ namespace sistema
             // 
             // label_monto_total
             // 
+            this.label_monto_total.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label_monto_total.AutoSize = true;
             this.label_monto_total.Location = new System.Drawing.Point(696, 608);
             this.label_monto_total.Name = "label_monto_total";
@@ -157,7 +164,8 @@ namespace sistema
             // 
             // boton_Exportar
             // 
-            this.boton_Exportar.Location = new System.Drawing.Point(12, 477);
+            this.boton_Exportar.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.boton_Exportar.Location = new System.Drawing.Point(52, 477);
             this.boton_Exportar.Name = "boton_Exportar";
             this.boton_Exportar.Size = new System.Drawing.Size(385, 50);
             this.boton_Exportar.TabIndex = 9;

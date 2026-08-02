@@ -41,6 +41,7 @@ namespace sistema
             // 
             // sistema_filtro
             // 
+            this.sistema_filtro.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.sistema_filtro.AutoSize = true;
             this.sistema_filtro.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sistema_filtro.Location = new System.Drawing.Point(224, 67);
@@ -51,6 +52,7 @@ namespace sistema
             // 
             // comboBox2
             // 
+            this.comboBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Items.AddRange(new object[] {
@@ -64,6 +66,7 @@ namespace sistema
             // 
             // lbl_buscar_bitacora
             // 
+            this.lbl_buscar_bitacora.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lbl_buscar_bitacora.AutoSize = true;
             this.lbl_buscar_bitacora.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_buscar_bitacora.Location = new System.Drawing.Point(14, 67);
@@ -74,6 +77,7 @@ namespace sistema
             // 
             // textBox2
             // 
+            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox2.Location = new System.Drawing.Point(18, 110);
             this.textBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -84,6 +88,7 @@ namespace sistema
             // 
             // dataGridView1
             // 
+            this.dataGridView1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(420, 62);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);

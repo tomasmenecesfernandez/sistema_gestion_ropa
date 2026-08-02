@@ -1,0 +1,6 @@
+-bloquear datagrid hecho
+-agregar elementos a mostrar en la bitácora, código y la función actualizar cantidad_vendida
+-verificar el error de los cambios de modificar en el formulario usuarios hecho
+-agregar permisos básicos al momento de crear usuarios
+
+actualizar documentación usuarios función borrar, leer usuarios que lo modifica en el código recien

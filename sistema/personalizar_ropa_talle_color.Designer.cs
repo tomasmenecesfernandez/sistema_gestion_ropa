@@ -58,6 +58,7 @@ namespace sistema
             // 
             // group_box_administrador_variables
             // 
+            this.group_box_administrador_variables.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.group_box_administrador_variables.Controls.Add(this.textBox1);
             this.group_box_administrador_variables.Controls.Add(this.comboBox1);
             this.group_box_administrador_variables.Controls.Add(this.detalle_capucha);
@@ -156,6 +157,7 @@ namespace sistema
             // 
             // dataGridView1
             // 
+            this.dataGridView1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(406, 53);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -188,6 +190,7 @@ namespace sistema
             // 
             // groupBox_vinculacion_variable
             // 
+            this.groupBox_vinculacion_variable.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.groupBox_vinculacion_variable.Controls.Add(this.detalle_rbtm_color1);
             this.groupBox_vinculacion_variable.Controls.Add(this.detalle_rbtm_talles1);
             this.groupBox_vinculacion_variable.Controls.Add(this.comboBox4);
@@ -292,6 +295,7 @@ namespace sistema
             // 
             // listBox1
             // 
+            this.listBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 23;
             this.listBox1.Location = new System.Drawing.Point(405, 398);
@@ -314,7 +318,7 @@ namespace sistema
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1029, 750);
+            this.ClientSize = new System.Drawing.Size(899, 750);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.groupBox_vinculacion_variable);

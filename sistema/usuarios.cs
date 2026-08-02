@@ -13,7 +13,7 @@ using Servicios;
 using Servicios.observer;
 namespace sistema
 {
-    public partial class usuarios : formulario_estilo,Iobservertraduccion
+    public partial class usuarios : formulario_estilo, Iobservertraduccion
     {
         public usuarios()
         {
@@ -36,7 +36,7 @@ namespace sistema
         BEcontrolCambioUsuario controlusuario_select = new BEcontrolCambioUsuario();
         BLLpermiso bllpermiso = new BLLpermiso();
         BLLcontrolUsuario bllcontrolusuario = new BLLcontrolUsuario();
-        
+
         private void label2_Click(object sender, EventArgs e)
         {
 
@@ -51,17 +51,17 @@ namespace sistema
                     bllusuario.alta(usuario);
                     BEcontrolCambioUsuario control = new BEcontrolCambioUsuario(usuario);
                     bllcontrolusuario.agregar_control_usuario(control);
-                    mostrar_data();   
+                    mostrar_data();
                 }
 
-                catch(Exception ex)
+                catch (Exception ex)
                 {
-                    MessageBox.Show(ex.Message,"mensaje de error",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+                    MessageBox.Show(ex.Message, "mensaje de error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
             else { MessageBox.Show("complete los cuadros de texto."); }
         }
-#region funciones_para_mostrar
+        #region funciones_para_mostrar
         public void mostrar_data()
         {
             try {
@@ -71,7 +71,7 @@ namespace sistema
             }
             catch { }
         }
-        public void mostrar_treeview(List<BEpermisoComponente> lista,TreeNodeCollection nodos)
+        public void mostrar_treeview(List<BEpermisoComponente> lista, TreeNodeCollection nodos)
         {
 
 
@@ -90,7 +90,7 @@ namespace sistema
 
             }
         }
-#endregion
+        #endregion
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -115,9 +115,10 @@ namespace sistema
             {
                 try
                 {
-                    if (textBox1.Text!="" && textBox2.Text!="") {
+                    if (textBox1.Text != "" && textBox2.Text != "")
+                    {
                         usuario.nombre = textBox1.Text;
-                        usuario.contraseña=textBox2.Text;
+                        usuario.contraseña = textBox2.Text;
                         usuario = bllusuario.encrytar_usuario(usuario);
                         bllusuario.modificar(usuario);
                         BEcontrolCambioUsuario controlusuario = new BEcontrolCambioUsuario(usuario);
@@ -129,7 +130,11 @@ namespace sistema
                         throw new Exception("Complete los cuadros de nombre y contraseña.");
                     }
                 }
-                catch (Exception ex){ MessageBox.Show(ex.Message); }
+                catch (Exception ex)
+                {
+                    mostrar_data();
+                    
+                    MessageBox.Show(ex.Message); }
             }
             else
             {

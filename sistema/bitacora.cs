@@ -61,7 +61,6 @@ namespace sistema
         {
             lbl_buscar_bitacora.Text = BLLtraducciones.traducir(lbl_buscar_bitacora.Name);
             sistema_filtro.Text = BLLtraducciones.traducir(sistema_filtro.Name);
-
         }
 
         private void bitacora_FormClosing(object sender, FormClosingEventArgs e)

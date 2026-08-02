@@ -219,7 +219,7 @@ namespace sistema
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(658, 595);
+            this.dataGridView1.Size = new System.Drawing.Size(497, 595);
             this.dataGridView1.TabIndex = 23;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
@@ -228,7 +228,7 @@ namespace sistema
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1029, 685);
+            this.ClientSize = new System.Drawing.Size(989, 685);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.clientes_groupbox_cliente);
             this.Controls.Add(this.dataGridView1);

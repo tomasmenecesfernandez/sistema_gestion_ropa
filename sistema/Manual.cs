@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace sistema
 {
-    public partial class Manual : Form
+    public partial class Manual : formulario_estilo
     {
         public Manual()
         {

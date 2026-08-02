@@ -162,7 +162,7 @@ namespace sistema_de_ropa
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1325, 329);
+            this.dataGridView1.Size = new System.Drawing.Size(1212, 329);
             this.dataGridView1.TabIndex = 8;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
@@ -353,7 +353,7 @@ namespace sistema_de_ropa
             this.listBox1.ItemHeight = 23;
             this.listBox1.Location = new System.Drawing.Point(511, 367);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(1324, 326);
+            this.listBox1.Size = new System.Drawing.Size(1211, 326);
             this.listBox1.TabIndex = 3;
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             this.listBox1.DoubleClick += new System.EventHandler(this.listBox1_DoubleClick);
@@ -362,7 +362,7 @@ namespace sistema_de_ropa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1389, 750);
+            this.ClientSize = new System.Drawing.Size(1276, 750);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.TEXTO_FECHA_PEDIDO);
             this.Controls.Add(this.sistema_fecha1);
