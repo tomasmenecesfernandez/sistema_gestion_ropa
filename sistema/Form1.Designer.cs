@@ -68,7 +68,7 @@ namespace sistema
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(174, 815);
+            this.menuStrip1.Size = new System.Drawing.Size(174, 441);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
@@ -159,6 +159,11 @@ namespace sistema
             this.manual_menu.Text = "Manual De Usuario";
             this.manual_menu.Click += new System.EventHandler(this.manualToolStripMenuItem_Click);
             // 
+            // permisos_menu
+            // 
+            this.permisos_menu.Name = "permisos_menu";
+            this.permisos_menu.Size = new System.Drawing.Size(163, 4);
+            // 
             // CERRAR_SESION_MENU
             // 
             this.CERRAR_SESION_MENU.Image = global::sistema.Properties.Resources._4115235_exit_logout_sign_out_114030;
@@ -167,11 +172,36 @@ namespace sistema
             this.CERRAR_SESION_MENU.Text = "CERRAR SESION";
             this.CERRAR_SESION_MENU.Click += new System.EventHandler(this.cERRARSESIONToolStripMenuItem_Click);
             // 
+            // menu_label_usuario
+            // 
+            this.menu_label_usuario.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.menu_label_usuario.Location = new System.Drawing.Point(12, 396);
+            this.menu_label_usuario.Name = "menu_label_usuario";
+            this.menu_label_usuario.Size = new System.Drawing.Size(73, 23);
+            this.menu_label_usuario.TabIndex = 2;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBox1.Location = new System.Drawing.Point(998, 12);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 24);
+            this.comboBox1.TabIndex = 1;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged_2);
+            // 
+            // label2
+            // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label2.Location = new System.Drawing.Point(87, 396);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(87, 23);
+            this.label2.TabIndex = 0;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1607, 815);
+            this.ClientSize = new System.Drawing.Size(1175, 441);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.menu_label_usuario);

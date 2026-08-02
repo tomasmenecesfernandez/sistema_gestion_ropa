@@ -291,11 +291,6 @@ namespace sistema
             b.Show();
         }
 
-        private void comboBox1_SelectedIndexChanged_1(object sender, EventArgs e)
-        {
-            BLLtraducciones.cargar_listatraducciones(comboBox1.Text);
-            idioma.Idioma=comboBox1.Text;
-        }
 
         private void personalizarRopaToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -315,6 +310,12 @@ namespace sistema
            m.Dock = DockStyle.Fill;
             m.FormBorderStyle = FormBorderStyle.None;
             m.Show();
+        }
+
+        private void comboBox1_SelectedIndexChanged_2(object sender, EventArgs e)
+        {
+            BLLtraducciones.cargar_listatraducciones(comboBox1.Text);
+            idioma.Idioma = comboBox1.Text;
         }
     }
 }
