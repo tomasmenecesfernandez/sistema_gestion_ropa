@@ -36,10 +36,10 @@ namespace sistema
         public void mostrar_composite()
         {
             int i = (-1);
-            foreach (BEpermisoComponente compo in bllrol.traer_nodos_hijos(1046))
+            foreach (BEpermisoComponente compo in bllrol.traer_nodos_hijos(6))
             {
                 i++;
-                mostrar_treeview(bllrol.traer_nodos_hijos(1046)[i], treeView1.Nodes);
+                mostrar_treeview(bllrol.traer_nodos_hijos(6)[i], treeView1.Nodes);
             }
 
         }
