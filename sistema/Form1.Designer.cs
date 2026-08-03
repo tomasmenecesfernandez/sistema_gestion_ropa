@@ -30,6 +30,10 @@ namespace sistema
         private void InitializeComponent()
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.permisos_menu = new System.Windows.Forms.ToolStripMenuItem();
+            this.menu_label_usuario = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.usuarios_menu = new System.Windows.Forms.ToolStripMenuItem();
             this.login_menu = new System.Windows.Forms.ToolStripMenuItem();
             this.reportes_menu = new System.Windows.Forms.ToolStripMenuItem();
@@ -40,11 +44,8 @@ namespace sistema
             this.menu_ABMPermisos = new System.Windows.Forms.ToolStripMenuItem();
             this.personalizarRopa_menu = new System.Windows.Forms.ToolStripMenuItem();
             this.manual_menu = new System.Windows.Forms.ToolStripMenuItem();
-            this.permisos_menu = new System.Windows.Forms.ToolStripMenuItem();
             this.CERRAR_SESION_MENU = new System.Windows.Forms.ToolStripMenuItem();
-            this.menu_label_usuario = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.menu_salir = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -64,7 +65,8 @@ namespace sistema
             this.personalizarRopa_menu,
             this.manual_menu,
             this.permisos_menu,
-            this.CERRAR_SESION_MENU});
+            this.CERRAR_SESION_MENU,
+            this.menu_salir});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
@@ -73,10 +75,41 @@ namespace sistema
             this.menuStrip1.Text = "menuStrip1";
             this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             // 
+            // permisos_menu
+            // 
+            this.permisos_menu.Name = "permisos_menu";
+            this.permisos_menu.Size = new System.Drawing.Size(163, 4);
+            // 
+            // menu_label_usuario
+            // 
+            this.menu_label_usuario.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.menu_label_usuario.Location = new System.Drawing.Point(12, 396);
+            this.menu_label_usuario.Name = "menu_label_usuario";
+            this.menu_label_usuario.Size = new System.Drawing.Size(73, 23);
+            this.menu_label_usuario.TabIndex = 2;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBox1.Location = new System.Drawing.Point(998, 12);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 24);
+            this.comboBox1.TabIndex = 1;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged_2);
+            // 
+            // label2
+            // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label2.Location = new System.Drawing.Point(87, 396);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(87, 23);
+            this.label2.TabIndex = 0;
+            // 
             // usuarios_menu
             // 
             this.usuarios_menu.Enabled = false;
             this.usuarios_menu.Image = global::sistema.Properties.Resources.users_icon_icons_com_57999;
+            this.usuarios_menu.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.usuarios_menu.Name = "usuarios_menu";
             this.usuarios_menu.Size = new System.Drawing.Size(163, 24);
             this.usuarios_menu.Text = "usuarios";
@@ -85,6 +118,7 @@ namespace sistema
             // login_menu
             // 
             this.login_menu.Image = global::sistema.Properties.Resources.login_80010;
+            this.login_menu.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.login_menu.Name = "login_menu";
             this.login_menu.Size = new System.Drawing.Size(163, 24);
             this.login_menu.Text = "login";
@@ -94,6 +128,7 @@ namespace sistema
             // 
             this.reportes_menu.Enabled = false;
             this.reportes_menu.Image = global::sistema.Properties.Resources.report_icon_216913;
+            this.reportes_menu.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.reportes_menu.Name = "reportes_menu";
             this.reportes_menu.Size = new System.Drawing.Size(163, 24);
             this.reportes_menu.Text = "reportes";
@@ -103,6 +138,7 @@ namespace sistema
             // 
             this.idioma2_menu.Enabled = false;
             this.idioma2_menu.Image = global::sistema.Properties.Resources.language_icon_144262;
+            this.idioma2_menu.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.idioma2_menu.Name = "idioma2_menu";
             this.idioma2_menu.Size = new System.Drawing.Size(163, 24);
             this.idioma2_menu.Text = "ABM_idioma";
@@ -112,6 +148,7 @@ namespace sistema
             // 
             this.menu_clientes.Enabled = false;
             this.menu_clientes.Image = global::sistema.Properties.Resources.user_add_12818;
+            this.menu_clientes.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.menu_clientes.Name = "menu_clientes";
             this.menu_clientes.Size = new System.Drawing.Size(163, 24);
             this.menu_clientes.Text = "Clientes";
@@ -121,6 +158,7 @@ namespace sistema
             // 
             this.sistema_menu.Enabled = false;
             this.sistema_menu.Image = global::sistema.Properties.Resources.clothing_shop_icon_192653;
+            this.sistema_menu.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.sistema_menu.Name = "sistema_menu";
             this.sistema_menu.Size = new System.Drawing.Size(163, 24);
             this.sistema_menu.Text = "sistema";
@@ -130,6 +168,7 @@ namespace sistema
             // 
             this.menu_bitacora.Enabled = false;
             this.menu_bitacora.Image = global::sistema.Properties.Resources.records_notes_journal_edited_9479;
+            this.menu_bitacora.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.menu_bitacora.Name = "menu_bitacora";
             this.menu_bitacora.Size = new System.Drawing.Size(163, 24);
             this.menu_bitacora.Text = "Bitacora";
@@ -159,11 +198,6 @@ namespace sistema
             this.manual_menu.Text = "Manual De Usuario";
             this.manual_menu.Click += new System.EventHandler(this.manualToolStripMenuItem_Click);
             // 
-            // permisos_menu
-            // 
-            this.permisos_menu.Name = "permisos_menu";
-            this.permisos_menu.Size = new System.Drawing.Size(163, 4);
-            // 
             // CERRAR_SESION_MENU
             // 
             this.CERRAR_SESION_MENU.Image = global::sistema.Properties.Resources._4115235_exit_logout_sign_out_114030;
@@ -172,36 +206,21 @@ namespace sistema
             this.CERRAR_SESION_MENU.Text = "CERRAR SESION";
             this.CERRAR_SESION_MENU.Click += new System.EventHandler(this.cERRARSESIONToolStripMenuItem_Click);
             // 
-            // menu_label_usuario
+            // menu_salir
             // 
-            this.menu_label_usuario.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.menu_label_usuario.Location = new System.Drawing.Point(12, 396);
-            this.menu_label_usuario.Name = "menu_label_usuario";
-            this.menu_label_usuario.Size = new System.Drawing.Size(73, 23);
-            this.menu_label_usuario.TabIndex = 2;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox1.Location = new System.Drawing.Point(998, 12);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 24);
-            this.comboBox1.TabIndex = 1;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged_2);
-            // 
-            // label2
-            // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.label2.Location = new System.Drawing.Point(87, 396);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(87, 23);
-            this.label2.TabIndex = 0;
+            this.menu_salir.Image = global::sistema.Properties.Resources.exit_closethesession_close_6317;
+            this.menu_salir.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.menu_salir.Name = "menu_salir";
+            this.menu_salir.Size = new System.Drawing.Size(163, 24);
+            this.menu_salir.Text = "SALIR";
+            this.menu_salir.Click += new System.EventHandler(this.sALIRToolStripMenuItem_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1175, 441);
+            this.ControlBox = false;
             this.Controls.Add(this.label2);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.menu_label_usuario);
@@ -237,6 +256,7 @@ namespace sistema
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ToolStripMenuItem personalizarRopa_menu;
         private System.Windows.Forms.ToolStripMenuItem manual_menu;
+        private System.Windows.Forms.ToolStripMenuItem menu_salir;
     }
 }
 

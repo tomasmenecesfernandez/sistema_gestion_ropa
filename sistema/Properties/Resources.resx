@@ -121,6 +121,9 @@
   <data name="permissions_icon_1499022" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\permissions_icon_149902.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="edit_modify_icon_1494881" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edit_modify_icon_1494881.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="1486485588-add-create-new-math-sign-cross-plus_81186" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1486485588-add-create-new-math-sign-cross-plus_81186.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -145,14 +148,14 @@
   <data name="edit_modify_icon_149488" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\edit_modify_icon_149488.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="records_notes_journal_edited_9479" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\records_notes_journal_edited_9479.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="User_Manual-80_icon-icons.com_57245" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\User_Manual-80_icon-icons.com_57245.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="delete_4219" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\delete_4219.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="edit_modify_icon_1494881" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\edit_modify_icon_1494881.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="users_icon-icons.com_57999" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\users_icon-icons.com_57999.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cart_outline_icon_139049 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cart_outline_icon_139049 (1).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -166,14 +169,14 @@
   <data name="login_80010" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\login_80010.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="User_Manual-80_icon-icons.com_57245" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\User_Manual-80_icon-icons.com_57245.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="ic_security_128_28721 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ic_security_128_28721 (1).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="security-protection-protect-key-password-login_108554" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\security-protection-protect-key-password-login_108554.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="4115235-exit-logout-sign-out_114030" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\4115235-exit-logout-sign-out_114030.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="permissions_icon_1499023" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\permissions_icon_1499021.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -190,8 +193,8 @@
   <data name="ic_security_128_28721" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ic_security_128_28721.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="users_icon-icons.com_57999" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\users_icon-icons.com_57999.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="records_notes_journal_edited_9479" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\records_notes_journal_edited_9479.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="language_icon_144262" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\language_icon_144262.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -199,7 +202,7 @@
   <data name="clothing_shop_icon_192653" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\clothing_shop_icon_192653.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="4115235-exit-logout-sign-out_114030" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\4115235-exit-logout-sign-out_114030.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="exit_closethesession_close_6317" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\exit_closethesession_close_6317.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

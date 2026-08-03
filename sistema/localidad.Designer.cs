@@ -41,6 +41,7 @@ namespace sistema
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(273, 17);
             this.dataGridView1.Name = "dataGridView1";
@@ -120,7 +121,7 @@ namespace sistema
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.dataGridView1);
             this.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.Margin = new System.Windows.Forms.Padding(3);
             this.Name = "localidad";
             this.Text = "localidad";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.localidad_FormClosing);

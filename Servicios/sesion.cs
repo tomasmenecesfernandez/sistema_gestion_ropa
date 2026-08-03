@@ -9,7 +9,6 @@ namespace Servicios
     public class sesion
     {
         public static sesion instancia;
-
         public BEusuario usuario { get; set; }
         public static sesion obtener_instancia
         {

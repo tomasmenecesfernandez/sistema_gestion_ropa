@@ -11,6 +11,7 @@ namespace BE
         public string nombre { get; set; }
         public string contraseña { get; set; }
         public int codigo { get; set; }
+        public int registro_cant_ropa_vendida { set; get; }
         public List<BEpermiso> permisos { get; set; }
         public BEusuario()
         {

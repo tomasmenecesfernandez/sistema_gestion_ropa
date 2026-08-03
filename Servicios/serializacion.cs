@@ -5,6 +5,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using BE;
 namespace Servicios
 {
     public class serializacion
@@ -30,6 +31,14 @@ namespace Servicios
                 if (!string.IsNullOrWhiteSpace(linea))
                 {
                     T obj = JsonConvert.DeserializeObject<T>(linea);
+                    if (obj is BEregistro registro)
+                    {
+                        if (registro.accion == "inicio de sesión" && registro.cantidad_ropa_vendida==0)
+                        {
+                            registro.cantidad_ropa_vendida = null;
+                        }
+                    }
+
                     lista.Add(obj);
                 }
             }

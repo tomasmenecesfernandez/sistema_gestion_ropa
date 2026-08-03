@@ -11,6 +11,7 @@ using BE;
 using BLL;
 using sistema_de_ropa;
 using Servicios.observer;
+using Servicios;
 namespace sistema
 {
     public partial class detalle_pedido : formulario_estilo, Iobservertraduccion
@@ -111,8 +112,8 @@ namespace sistema
                 pedido_detalle.cantidad = Convert.ToInt32(textBox1.Text);
                 pedido_detalle.codigo_pedido = sistema1.pedido_select.codigo;
                 bllpedido.alta(pedido_detalle);
+                sesion.instancia.usuario.registro_cant_ropa_vendida += pedido_detalle.cantidad;
                 cargar_pedidos_detalles();
-
             }
             catch { MessageBox.Show("error, vuelva a intentarlo."); }
         }

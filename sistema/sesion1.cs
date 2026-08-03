@@ -65,7 +65,7 @@ namespace sistema
             if (form_padre == null)
             {
                 Form1 f = new Form1(idiomas);
-                f.Size = new Size(1400, 1000);
+                f.WindowState = FormWindowState.Maximized;
                 f.Show();
             }
             else

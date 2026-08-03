@@ -192,6 +192,7 @@
     <Compile Include="usuarios.Designer.cs">
       <DependentUpon>usuarios.cs</DependentUpon>
     </Compile>
+    <None Include="Resources\exit_closethesession_close_6317.ico" />
     <None Include="Resources\4115235-exit-logout-sign-out_114030.ico" />
     <None Include="Resources\User_Manual-80_icon-icons.com_57245.ico" />
     <EmbeddedResource Include="bitacora.resx">

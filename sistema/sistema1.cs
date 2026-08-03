@@ -98,6 +98,7 @@ namespace sistema_de_ropa
                     BEpedidos pedido = new BEpedidos();
                     pedido.descuento = bllpedido.calcular_descuento_pedido(cliente.tipo);
                     bllpedido.guardar_pedido(pedido, cliente.codigo);
+
                     cargar_grilla();
                     traer_pedidos_cliente();
                     limpiar_pedido();
@@ -242,10 +243,10 @@ namespace sistema_de_ropa
 
         private void button6_Click(object sender, EventArgs e)
         {
+
             if (pedido_select!=null) {
                 detalle_pedido d = new detalle_pedido(this,idioma);
-                d.MdiParent = this.MdiParent;
-                d.Show();
+                d.ShowDialog(this);
             }
             else { MessageBox.Show("error seleccione un pedido."); }
         }
@@ -254,9 +255,8 @@ namespace sistema_de_ropa
         {
             if (pedido_select != null)
             {
-                detalle_pedido d = new detalle_pedido(this,idioma);
-                d.MdiParent = this.MdiParent;
-                d.Show();
+                detalle_pedido d = new detalle_pedido(this, idioma);
+                d.ShowDialog(this);
             }
             else { MessageBox.Show("error seleccione un pedido."); }
         }

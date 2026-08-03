@@ -156,6 +156,7 @@ namespace sistema
         }
         public void actualizar_idioma()
         {
+            menu_salir.Text = BLLtraducciones.traducir(menu_salir.Name);
             usuarios_menu.Text = BLLtraducciones.traducir(usuarios_menu.Name);
             login_menu.Text = BLLtraducciones.traducir(login_menu.Name);
             reportes_menu.Text = BLLtraducciones.traducir(reportes_menu.Name);
@@ -198,7 +199,7 @@ namespace sistema
         {
             if (sesion.instancia != null)
             {
-                BEregistro registro = new BEregistro(bllusuario.get_nombre(sesion.instancia.usuario), "cerrar sesion");
+                BEregistro registro = new BEregistro(bllusuario.get_nombre(sesion.instancia.usuario), "cerrar sesion", sesion.instancia.usuario.registro_cant_ropa_vendida);
                 serializacion.serializar(registro);
                 sesion.Logout();
                 cerrar_formularios();
@@ -208,7 +209,6 @@ namespace sistema
                 desactivar_form();
                 menu_label_usuario.Text = "";// label de usuario
                 MessageBox.Show("Se cerro sesión con éxito.");
-                
             }
             else 
             {
@@ -316,6 +316,23 @@ namespace sistema
         {
             BLLtraducciones.cargar_listatraducciones(comboBox1.Text);
             idioma.Idioma = comboBox1.Text;
+        }
+
+        private void sALIRToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DialogResult resultado = MessageBox.Show("Esta seguro que quiere de salir de la aplicación?", "Confirmar Salida", MessageBoxButtons.YesNo, MessageBoxIcon.Question); ;
+            if (resultado==DialogResult.Yes){
+
+                this.Close();
+                if (sesion.instancia!=null) {
+                    try
+                    {
+                        cERRARSESIONToolStripMenuItem_Click(sender, e);
+                    }
+                    catch { } 
+                }
+                Environment.Exit(0);
+            }
         }
     }
 }
