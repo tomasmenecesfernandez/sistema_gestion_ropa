@@ -86,8 +86,17 @@ namespace sistema
         }
         
         private void sesion1_Load(object sender, EventArgs e)
-        {comboBox1.DataSource = null;
-            comboBox1.DataSource= bll_idioma.leer_idiomas();
+        {
+            comboBox1.DataSource = null;
+            try
+            {
+                comboBox1.DataSource = bll_idioma.leer_idiomas();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+                Environment.Exit(0);
+            }
             textBox1.Text = "tomi";
             textBox2.Text = "1234";
         }

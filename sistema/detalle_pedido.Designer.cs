@@ -134,6 +134,7 @@ namespace sistema
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(311, 30);
             this.textBox1.TabIndex = 23;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // btm_modificar
             // 
@@ -218,7 +219,7 @@ namespace sistema
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.listBox1);
             this.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.Margin = new System.Windows.Forms.Padding(3);
             this.Name = "detalle_pedido";
             this.Text = "detalle_pedido";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.detalle_pedido_FormClosing);

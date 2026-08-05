@@ -101,7 +101,8 @@ namespace sistema_de_ropa
             this.groupBox1.Size = new System.Drawing.Size(491, 266);
             this.groupBox1.TabIndex = 22;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "CLIENTE";
+            this.groupBox1.UseCompatibleTextRendering = true;
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // sistema_btm_ir_form_cliente
             // 

@@ -118,8 +118,6 @@ namespace sistema_de_ropa
         {
             listBox1.DataSource = null;
             listBox1.DataSource = cliente.pedidos;
-            //TEXTO_TOTAL_ROPA.Text = cliente_select.pedido.total_pedido.ToString() ;
-            //TEXTO_DESCUENTO.Text = cliente_select.pedido.descuento_de_pedido;
 
         }
 
@@ -238,6 +236,8 @@ namespace sistema_de_ropa
         {
             Cliente c = new Cliente(this,idioma);
             c.MdiParent = this.MdiParent;
+            c.Dock = DockStyle.Fill;
+            c.FormBorderStyle = FormBorderStyle.None;
             c.Show();
         }
 
@@ -300,6 +300,11 @@ namespace sistema_de_ropa
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
         {
 
         }

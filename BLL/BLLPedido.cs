@@ -12,33 +12,7 @@ namespace BLL
     public class BLLPedido
     {
         DAL_pedido dal = new DAL_pedido();
-        public double calcular_total_pedido(BEpedidos pedido, BEcliente cliente)
-        {
-        //    if (pedido.ropa is BEbuzos)
-        //    {
-        //        if (pedido.descuento != 0)
-        //        {
-        //            return pedido.cantidad * 10000 * (1 - pedido.descuento / 100);
-        //        }
-        //        else
-        //        {
-        //            return pedido.cantidad * 10000;
-        //        }
-        //    }
-        //    else
-        //    {
-        //        if (pedido.descuento != 0)
-        //        {
-        //            return pedido.cantidad * 7000 * (1 - pedido.descuento / 100);
-        //        }
-        //        else
-        //        {
-        //            return pedido.cantidad * 7000;
-        //        }
-        //    }
-        return 0;
-
-        }
+       
         public void alta(BEpedidos_detalle pd)
         {
             dal.alta( pd);

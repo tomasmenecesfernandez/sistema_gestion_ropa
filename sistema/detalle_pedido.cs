@@ -150,14 +150,14 @@ namespace sistema
 
         private void button3_Click(object sender, EventArgs e)
         {
-
-            if (listBox1.SelectedItems != null)
-            {
-                DialogResult = MessageBox.Show("esta seguro que desea eliminar ese elemento del pedido","confirmar eliminación",MessageBoxButtons.YesNo,MessageBoxIcon.Warning);
-                bllpedido.borrar_pedido_detalle(pedido_select);
-                cargar_pedidos_detalles();
-            }
-            else { MessageBox.Show("seleccione alguna prenda"); }
+            if (listBox1.SelectedItem != null)
+                {
+                    DialogResult resultado= MessageBox.Show("esta seguro que desea eliminar ese elemento del pedido", "confirmar eliminación", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (resultado==DialogResult.Yes) {
+                    bllpedido.borrar_pedido_detalle(pedido_select);
+                    cargar_pedidos_detalles(); }
+                }
+                else { MessageBox.Show("seleccione alguna prenda"); }
         }
 
         private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -211,6 +211,36 @@ namespace sistema
                 detalle_capucha.Visible = false;
                 comboBox1.Visible = false;
                 cargar_combobox_talles_colores();
+            }
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (textBox1.Text == "") {
+                    btm_agregar.Enabled = true;
+                    btm_modificar.Enabled = true;
+                    btm_borrar.Enabled = true;
+                    return;
+                }
+                if (Convert.ToInt32(textBox1.Text) > 0 )
+                {
+                    btm_agregar.Enabled = true;
+                    btm_modificar.Enabled = true;
+                    btm_borrar.Enabled = true;
+                }
+                else
+                {
+                    btm_agregar.Enabled = false;
+                    btm_modificar.Enabled = false;
+                    btm_borrar.Enabled = false;
+                }
+            }catch
+            {
+                btm_agregar.Enabled = false;
+                btm_modificar.Enabled = false;
+                btm_borrar.Enabled = false;
             }
         }
     }
