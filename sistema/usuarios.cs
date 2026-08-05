@@ -133,7 +133,6 @@ namespace sistema
                 catch (Exception ex)
                 {
                     mostrar_data();
-                    
                     MessageBox.Show(ex.Message); }
             }
             else
@@ -167,16 +166,25 @@ namespace sistema
         {
             if (usuario != null)
             {
-                try
+                if (bllusuario.get_nombre(sesion.instancia.usuario) != usuario.nombre)
                 {
-                    DialogResult = MessageBox.Show("esta seguro que quiere borrar el usuario?", "confirmar eliminación", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-                    if (DialogResult == DialogResult.Yes) {
-                        bllusuario.borrar(usuario);
-                        mostrar_data(); }
+                    try
+                    {
+                        DialogResult = MessageBox.Show("esta seguro que quiere borrar el usuario?", "confirmar eliminación", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                        if (DialogResult == DialogResult.Yes)
+                        {
+                            bllusuario.borrar(usuario);
+                            mostrar_data();
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
                 }
-                catch(Exception ex)
+                else
                 {
-                    MessageBox.Show(ex.Message);
+                    MessageBox.Show("Error, no se puede eliminar el mismo usuario que esta usando ahora.");
                 }
             }
             else

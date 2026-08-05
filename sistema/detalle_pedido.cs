@@ -135,7 +135,8 @@ namespace sistema
                         BEjogging jogging = new BEjogging(comboBox2.Text.ToString(), comboBox3.Text);
                         pedido_detalle.ropa = jogging;
                     }
-                    else{ throw new Exception("error, no se puede modificar la misma prenda cambiado el tipo de ropa."); }
+                    else{ throw new Exception("error, no se puede modificar la misma prenda cambiado el tipo de ropa."); 
+                    }
                     pedido_detalle.cantidad = Convert.ToInt32(textBox1.Text);
                     pedido_detalle.codigo_pedido = sistema1.pedido_select.codigo;
                     pedido_detalle.codigo = pedido_select.codigo;

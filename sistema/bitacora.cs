@@ -29,7 +29,7 @@ namespace sistema
         private void bitacora_Load(object sender, EventArgs e)
         {
             cargar_grilla1();
-            comboBox2.Text = "Nombre";
+          
         }
 
         public void buscar_bitacora(string texto, string filtro)
